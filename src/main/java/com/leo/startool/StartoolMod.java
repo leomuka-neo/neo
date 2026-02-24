@@ -34,9 +34,9 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-@Mod(StartoolMod.MODID)
+@Mod(StartoolMod.MOD_ID)
 public class StartoolMod {
-    public static final String MODID = "startool";
+    public static final String MOD_ID = "startool";
     public static final Logger LOGGER = LogUtils.getLogger();
     public StartoolMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
@@ -54,7 +54,7 @@ public class StartoolMod {
     public void onServerStarting(ServerStartingEvent event) {
 
     }
-    @EventBusSubscriber(modid = StartoolMod.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = StartoolMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
