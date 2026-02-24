@@ -7,5 +7,4 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(StartoolMod.MOD_ID);
 
 
-
 }

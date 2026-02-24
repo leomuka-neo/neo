@@ -59,6 +59,7 @@ public class StartoolMod {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
 
+
         }
     }
 }
