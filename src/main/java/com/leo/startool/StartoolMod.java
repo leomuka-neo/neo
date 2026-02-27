@@ -38,7 +38,12 @@ public class StartoolMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
     event.accept(ModItems.STARPICk);
+
 }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.STAR_PICKAXE.get());
+        }
+
     }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
